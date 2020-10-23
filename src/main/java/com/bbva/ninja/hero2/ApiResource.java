@@ -2,6 +2,7 @@ package com.bbva.ninja.hero2;
 
 import java.lang.Object;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 
@@ -10,11 +11,23 @@ import javax.ws.rs.PathParam;
  */
 @Path("/api")
 public interface ApiResource {
+  @Path("/heroes")
+  @POST
+  void generatedMethod1();
+
   @Path("/heroes/{id}")
   @GET
-  void generatedMethod1(@PathParam("id") Object id);
+  void generatedMethod2(@PathParam("id") Object id);
 
   @Path("/heroes/{nombre}/")
   @GET
-  void generatedMethod2(@PathParam("nombre") Object nombre);
+  void generatedMethod3(@PathParam("nombre") Object nombre);
+
+  @Path("/heroes/hello")
+  @GET
+  void generatedMethod4();
+
+  @Path("/heroes/hello")
+  @POST
+  void generatedMethod5();
 }
