@@ -1,0 +1,76 @@
+{
+    "openapi": "3.0.2",
+    "info": {
+        "title": "Hero API",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/heroes": {
+            "post": {
+                "requestBody": {
+                    "description": "SUCCESS"
+                },
+                "responses": {
+                    "200": {
+                        "description": "SUCCESS"
+                    },
+                    "201": {
+                        "description": "CREATED"
+                    }
+                }
+            }
+        },
+        "/api/heroes/{id}": {
+            "get": {
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "SUCCESS"
+                    }
+                }
+            }
+        },
+        "/api/heroes/{nombre}/": {
+            "get": {
+                "parameters": [
+                    {
+                        "name": "nombre",
+                        "description": "NOMBRE ",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "SUCCESS"
+                    }
+                }
+            }
+        },
+        "/api/heroes/hello": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "SUCCESS"
+                    }
+                }
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "SUCCESS"
+                    }
+                }
+            }
+        },
+        "/api/heroes/ramdom": {
+
+        }
+    }
+}
