@@ -1,0 +1,51 @@
+{
+    "openapi": "3.0.2",
+    "info": {
+        "title": "Hero API",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/heroes": {
+
+        },
+        "/api/heroes/{id}": {
+            "get": {
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "SUCCESS"
+                    }
+                }
+            }
+        },
+        "/api/heroes/{nombre}/": {
+            "get": {
+                "parameters": [
+                    {
+                        "name": "nombre",
+                        "description": "NOMBRE ",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "SUCCESS"
+                    }
+                }
+            }
+        },
+        "/api/heroes/hello": {
+
+        },
+        "/api/heroes/ramdom": {
+
+        }
+    }
+}
